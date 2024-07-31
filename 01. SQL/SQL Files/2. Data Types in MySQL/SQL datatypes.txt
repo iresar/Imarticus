@@ -1,0 +1,61 @@
+SQL Datatypes
+
+Each column in a database table is required to have a name and a data type.
+
+In SQL we must decide what type of data that will be stored inside each column when creating a table. 
+The data type is a guideline for SQL to understand what type of data is expected inside of each column,and it also identifies how SQL will interact with the stored data.
+
+Data types mainly classified into three categories for every database.
+
+String Data types
+Numeric Data types
+Date and time Data types
+
+
+String Data types:
+CHAR(Size) - It is used to specify a fixed length string that can contain numbers, letters, and special characters.
+Its size can be 0 to 255 characters. Default is 1.
+
+VARCHAR(Size) - It is used to specify a variable length string that can contain numbers, letters, and special characters. 
+Its size can be from 0 to 65535 characters. 
+
+TEXT has 4 different types 
+1. TINYTEXT
+2. TEXT
+3. MEDIUM TEXT
+4. LONGTEXT
+
+TINYTEXT - It holds a string with a maximum length of 255 characters. ex:- Storing Short Descriptions or Tags
+
+TEXT - It holds a string with a maximum length of 65535
+
+MEDIUMTEXT - It holds a string with a maximum length of 16,777,215. (around 16 million)
+
+LONGTEXT - It holds a string with a maximum length of 4,294,967,295 characters. (around 4 billion)
+
+------------------------------------------------------------------------------------------------
+
+Numeric Data Types:
+BIT(Size) - It is used for a bit-value type. The number of bits per value is specified in size. 
+Its size can be 1 to 64. The default value is 1.
+
+INT(size) - It is used for the integer value. Its signed range varies from -2147483648 to 2147483647 and unsigned range varies from 0 to 4294967295.
+The size parameter specifies the max display width that is 255.
+
+INTEGER(size) - It is equal to INT(size).
+
+BOOL - It is used to specify Boolean values true and false.
+Zero is considered as false, and nonzero values are considered as true.
+
+--------------------------------------------------------------------------------------
+
+Date and time Data types:
+DATE - It is used to specify date format YYYY-MM-DD. 
+
+DATETIME - It is used to specify date and time combination. Its format is YYYY-MM-DD hh:mm:ss.
+
+TIMESTAMP - It is used to specify the timestamp. Its value is stored as the number of seconds. Its format is YYYY-MM-DD hh:mm:ss.
+
+TIME - It is used to specify the time format. Its format is hh:mm:ss.
+
+YEAR - It is used to specify a year in four-digit format.
